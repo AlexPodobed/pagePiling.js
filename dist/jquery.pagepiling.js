@@ -10,6 +10,7 @@
     'use strict';
 
     $.fn.pagepiling = function (custom) {
+        console.log('> test log');
         var PP = $.fn.pagepiling;
         var container = $(this);
         var lastScrolledDestiny;
