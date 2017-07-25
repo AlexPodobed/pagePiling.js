@@ -10,7 +10,6 @@
     'use strict';
 
     $.fn.pagepiling = function (custom) {
-        console.log('> test log');
         var $htmlBody = $('html, body');
         var $body = $('body');
 
@@ -212,7 +211,10 @@
                 '-ms-touch-action': 'none', /* Touch detection for Windows 8 */
                 'touch-action': 'none'       /* IE 11 on Windows Phone 8.1*/
             });
-
+            $htmlBody.css({
+                'overflow': 'hidden',
+                'height': '100%'
+            });
             //adding a class to recognize the container internally in the code
             container.addClass(WRAPPER);
             $('html').addClass(ENABLED);
