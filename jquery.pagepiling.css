@@ -6,7 +6,8 @@
  *
  * Copyright (C) 2016 alvarotrigo.com - A project by Alvaro Trigo
  */
-html, body {
+html.pp-enabled,
+body.pp-enabled {
     overflow:hidden;
     margin:0;
     padding:0;
